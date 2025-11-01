@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Taller Mecánico El Fierro</title>
+  <meta name="description" content="Contactanos por WhatsApp, email o visitanos en Morón. Envíanos tu consulta.">
+  <link rel="canonical" href="https://tu-dominio-o-github-pages/contacto.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-light" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">El Fierro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Mostrar menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="turnos.html">Turnos</a></li>
+            <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <header class="mb-4">
+      <h1 class="h2">Contacto</h1>
+      <p>Estamos para ayudarte. De lunes a viernes de 9 a 19 h.</p>
+    </header>
+
+    <div class="row g-4">
+      <section class="col-md-6" aria-labelledby="titulo-form">
+        <h2 id="titulo-form" class="h4">Escribinos</h2>
+        <form id="form-contacto" class="row g-3" novalidate>
+          <div class="col-sm-6">
+            <label for="c-nombre" class="form-label">Nombre</label>
+            <input type="text" id="c-nombre" class="form-control" required>
+            <div class="invalid-feedback">Ingresá tu nombre.</div>
+          </div>
+          <div class="col-sm-6">
+            <label for="c-email" class="form-label">Email</label>
+            <input type="email" id="c-email" class="form-control" required>
+            <div class="invalid-feedback">Ingresá un email válido.</div>
+          </div>
+          <div class="col-12">
+            <label for="c-msg" class="form-label">Mensaje</label>
+            <textarea id="c-msg" class="form-control" rows="4" required></textarea>
+            <div class="invalid-feedback">Escribí tu consulta.</div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <span id="contacto-ok" class="ms-2 text-success d-none" role="status" aria-live="polite">✔ Mensaje enviado.</span>
+          </div>
+        </form>
+      </section>
+
+      <aside class="col-md-6" aria-label="Datos de contacto y mapa">
+        <div class="p-3 bg-light rounded h-100">
+          <h2 class="h4">Datos</h2>
+          <ul class="list-unstyled mb-3">
+            <li>📍 Av. Rivadavia 12345, Morón</li>
+            <li>📞 +54 11 5555-1234</li>
+            <li>✉️ hola@elfierro.com.ar</li>
+          </ul>
+          <div class="ratio ratio-16x9 rounded overflow-hidden">
+            <iframe title="Mapa del taller" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Mor%C3%B3n%2C%20Buenos%20Aires&output=embed"></iframe>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="py-4 bg-dark text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0">© <span id="year"></span> El Fierro</p>
+      <a class="text-white text-decoration-none" href="index.html">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
